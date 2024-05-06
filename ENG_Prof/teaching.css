@@ -1,0 +1,254 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1 0 auto;
+    background-image: url('background_img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.leaderContent {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.leaderPicture {
+    position: absolute;
+    height: 120%;
+    border-radius: 100%;
+}
+
+.column, .column-side {
+    animation: fadeIn 5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.title {
+    margin-top: 75px;
+    margin-left: 115px;
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    font-size: 24px; /* Increase the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Change the text color */
+}
+
+.wrapCntr {
+    display: inline-block;
+    margin-top: 250px;
+    margin-left: 10px;
+}
+
+.column {
+    width: 25%;
+    height: 25%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.left_img {
+    width: 100%;
+    height: 30%;
+}
+
+.right_img {
+    width: 100%;
+    height: 30%;
+}
+
+.wholeCntr {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+h2 {
+    top: 15px
+}
+
+.image-container {
+    width: 100%;
+    height: 30%;
+}
+
+.text-container {
+    width: 90%;
+    height: 305px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.column-side {
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 80px;
+    margin-top: 20px;
+    width: 70%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.text-container-side {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+}
+
+.image-container-side {
+    width: 65%;
+    height: 100%;
+    padding: 0;
+}
+
+.column, .column-side {
+    border-radius: 20px;
+}
+
+.box1 {
+    animation: slideIn 0.5s ease-out forwards;
+    animation-delay: 0s; /* No delay for the first box */
+}
+
+.box2 {
+    animation: slideIn 0.5s ease-out forwards;
+    animation-delay: 1s; /* 2 second delay for the second box */
+}
+
+.box3 {
+    animation: slideIn 0.5s ease-out forwards;
+    animation-delay: 1.5s; /* 4 second delay for the third box */
+}
+
+.left_img, .right_img, .side_img {
+    border-radius: 20px;
+}
+
+.side_img {
+    width: 100%;
+    height: 100%;
+}
+
+.highlighted_research {
+    padding: 20px;
+    color: black;
+    font-family: "Besley", serif;
+    padding-left: 20px;
+}
+
+.leaderText {
+    margin-left: 40%;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    max-width: 30%;
+    height: 30%;
+}
+
+.title1, .title2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    width: 55%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.clear {
+    clear: both;
+}
+
+
+@media(max-width: 600px)
+{
+  .leaderPicture
+  {
+    width: 60%;
+  }
+}
+
+.image-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid gold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0;
+}

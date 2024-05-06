@@ -1,0 +1,500 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    background-image: url('background_img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background {
+    width: 100%;
+    background-image: url('other_img.jpg');
+    height: 33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    z-index: 2;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid gold;
+}
+
+.fade-in-text {
+    animation: fadeIn 3s;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.column, .column-side {
+    animation: fadeIn 5s ease-in-out;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 35px;
+}
+
+.column {
+    width: 25%;
+    height: 25%;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.left_img {
+    width: 100%;
+    height: 30%;
+}
+
+.right_img {
+    width: 100%;
+    height: 30%;
+}
+
+.image-container {
+    width: 100%;
+    height: 30%;
+}
+
+.text-container {
+    width: 90%;
+    height: 305px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.column-side {
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 80px;
+}
+
+.text-container-side {
+    width: 60%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1vw;
+}
+
+.image-container-side {
+    width: 40%;
+    height: 100%;
+    padding: 0;
+}
+
+.side_img {
+    width: 100%;
+    height: 100%;
+}
+
+.highlighted_research {
+    padding: 20px;
+    color: black;
+    font-family: "Besley", serif;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.column, .column-side {
+    border-radius: 20px;
+}
+
+.left_img, .right_img, .side_img {
+    border-radius: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(background_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.leadershipRolesRow1, .leadershipRolesRow2, .leadershipRolesRow3, .leadershipRolesRow4 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.leadershipRolesRow1 .leaderProfile {
+  opacity: 0;
+  animation: slideInFromRight 2s ease-out forwards;
+}
+
+.leadershipRolesRow2 .leaderProfile {
+  opacity: 0;
+  animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.leadershipRolesRow3 .leaderProfile {
+  opacity: 0;
+  animation: slideInFromRight 2s ease-out forwards;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.leadershipRolesRow1 .leaderProfile:nth-child(5) {
+  animation-delay: 1.25s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(1) {
+  animation-delay: 1.25s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.leadershipRolesRow2 .leaderProfile:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(1) {
+  animation-delay: 0.25s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.leadershipRolesRow3 .leaderProfile:nth-child(5) {
+  animation-delay: 1.25s;
+}
+
+@media (max-width: 600px) 
+{
+  .container
+  {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.sides {
+  width: 17.5%;
+  box-sizing: border-box;
+}
+
+.large {
+  width: 65%;
+}
+
+.mainHeader {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 4vw;
+  font-weight: 100;
+  color: black;
+  margin-bottom: 5%
+}
+
+@media(max-width: 600px) {
+  .mainHeader
+  {
+    font-size: 50px;
+  }
+}
+
+.leadershipRolesRow1 {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@media(max-width: 600px)
+{
+  .leadershipRolesRow1
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+}
+
+.leadershipRolesRow2
+{
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media(max-width: 600px)
+{
+  .leadershipRolesRow2
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+}
+
+.leadershipRolesRow3 {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@media(max-width: 600px)
+{
+  .leadershipRolesRow3
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+}
+
+.leaderProfile {
+  position: relative;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #676767;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow: auto;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaderName, .leaderRole, .leaderLinks {
+  flex-grow: 1;
+}
+
+@media(max-width: 600px) {
+  .leaderProfile {
+      margin-bottom: 5%;
+      width: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #fff;
+  }
+}
+
+.leaderProfile:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.leaderPicture {
+  width: 70%;
+  border-radius: 100%;
+  align-self: center;
+}
+
+
+@media(max-width: 600px)
+{
+  .leaderPicture
+  {
+    width: 60%;
+  }
+}
+
+.leaderName
+{
+  font-size: 2vw;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+
+@media(max-width: 850px)
+{
+  .leaderName
+  {
+    font-size: 22px;
+  }
+}
+
+
+@media(max-width: 600px)
+{
+  .leaderName
+  {
+    font-size: 5vw;
+  }
+}
+
+.leaderRole
+{
+  font-size: 1vw;
+  font-weight:100;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: black;
+}
+
+@media(max-width: 600px)
+{
+  .leaderRole
+  {
+    font-size: 1.25vw;
+  }
+}
+
+@media(min-width: 601px)
+{
+.leaderRole
+{
+  font-size: 1.5vw;
+}
+}
+
+.leaderProfile {
+    position: relative;
+}
+
+.leaderLinks {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90%;
+  right: 0;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.leaderProfile:hover .leaderLinks {
+    opacity: 1;
+}
+
+.leaderLinks img {
+  width: 30px;
+  height: 30px;
+}
+
+.leaderLinks img:last-child {
+  margin-right: 2px;
+  margin-left: 2px;
+}
