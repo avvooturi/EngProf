@@ -19,7 +19,7 @@ html, body {
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -114,15 +114,47 @@ footer {
     width: 100%;
     flex-shrink: 0;
     background-color: rgb(255, 216, 59);
-    color: white;
+    color: black;
     padding: 20px;
     text-align: left;
 }
 
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 .footer-content p {
     margin: 0;
     padding: 0;
+    text-align: center;
+}
+
+.footer-content button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #fc0;
+    color: black;
+    cursor: pointer;
+}
+
+.footer-content button:hover {
+    background-color: #f90;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Optional: Adds space between the buttons */
+}
+
+.footer-text {
+    text-align: center;
+    width: 100%;
 }
 
 .modal {
@@ -192,4 +224,92 @@ footer {
     justify-content: space-between; /* Optional: Adds space between the columns */
     flex-wrap: wrap;
     flex-wrap: 45%;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.movie,
+.game {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 10px;
+    position: relative;
+    opacity: 0;
+}
+
+.movie {
+    animation: slideInFromRight 1s ease-out forwards;
+    /* Remove the opacity property */
+}
+
+.game {
+    animation: slideInFromLeft 1s ease-out forwards;
+    /* Remove the opacity property */
+}
+
+
+.movie-image {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+.movie:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.movie:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.movie:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.movie:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.movie:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.game:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.game:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.game:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.game:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.game:nth-child(5) {
+    animation-delay: 2s;
 }

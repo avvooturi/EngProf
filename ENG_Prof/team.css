@@ -152,15 +152,67 @@ body {
 }
 
 footer {
-    background-color: #8400ff;
-    color: white;
-    padding: 20px;
-    text-align: left;
+  margin-top: auto; /* Add this line */
+  left: 0;
+  bottom: 0;
+  flex-shrink: 0;
+  background-color: #8400ff;
+  color: white;
+  padding: 20px;
+  text-align: left;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-content p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-content button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(224, 71, 255);
+  color: white;
+  cursor: pointer;
+}
+
+.footer-content button:hover {
+  background-color: rgb(145, 2, 158);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Optional: Adds space between the buttons */
+}
+
+.footer-text {
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content button:hover {
+  background-color: rgb(145, 2, 158);
+}
+
+.footer-text {
+  text-align: center;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Optional: Adds space between the buttons */
 }
 
 .column, .column-side {
