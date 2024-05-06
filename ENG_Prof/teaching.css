@@ -13,7 +13,7 @@ body {
 
 .content {
     flex: 1 0 auto;
-    background-image: url('background_img.png');
+    background: black;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 10%;
@@ -58,7 +58,7 @@ footer {
     font-family: 'Arial', sans-serif; /* Change the font family */
     font-size: 24px; /* Increase the font size */
     font-weight: bold; /* Make the text bold */
-    color: #333; /* Change the text color */
+    color: white; /* Change the text color */
 }
 
 .wrapCntr {
@@ -185,6 +185,7 @@ h2 {
 
 .leaderText {
     margin-left: 40%;
+    color: white;
     font-family: Arial, sans-serif;
     font-size: 20px;
     max-width: 30%;
@@ -197,6 +198,7 @@ h2 {
     width: 55%;
     text-align: center;
     margin-top: 100px;
+    color: white;
 }
 
 .clear {
@@ -224,7 +226,7 @@ h2 {
     top: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #333;
+    background-color: #8400ff;
     z-index: 2;
 }
 
@@ -242,7 +244,7 @@ h2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #8400ff;
     color: white;
     padding: 20px;
     text-align: left;
