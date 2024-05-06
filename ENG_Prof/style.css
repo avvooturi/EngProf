@@ -13,14 +13,14 @@ body {
 }
 
 .header {
-    background-image: url('background_img.png'); /* Add this line */
+    background: black; /* Add this line */
     background-size: cover; /* Add this line */
     background-repeat: no-repeat; /* Add this line */
 }
 
 .background {
     width: 100%;
-    background-image: url('other_img.jpg');
+    background-image: url('imgs_folder/other_img.jpg');
     height: 33vh;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ body {
     top: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #333;
+    background-color: #8400ff;
     z-index: 2;
 }
 
@@ -151,13 +151,13 @@ body {
 
 .highlighted_research {
     padding: 20px; /* Add some padding */
-    color: black; /* White text */
+    color: white; /* White text */
     font-family: Arial, sans-serif;
     padding-left: 20px;
 }
 
 footer {
-    background-color: #333; /* Gray background */
+    background-color: #8400ff; /* Gray background */
     color: white; /* White text */
     padding: 20px; /* Add some padding */
     text-align: left; /* Center the text */
