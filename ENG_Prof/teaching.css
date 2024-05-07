@@ -226,30 +226,32 @@ h2 {
     top: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #8400ff;
+    background-color: #fc0;
     z-index: 2;
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .navbar a:hover {
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid black;
 }
 
 footer {
+    position: fixed; /* Change to relative */
     margin-top: auto; /* Add this line */
     left: 0;
     bottom: 0;
+    width: 100%;
     flex-shrink: 0;
-    background-color: #8400ff;
-    color: white;
+    background-color: rgb(255, 216, 59);
+    color: black;
     padding: 20px;
     text-align: left;
 }
@@ -272,13 +274,13 @@ footer {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    background-color: rgb(224, 71, 255);
-    color: white;
+    background-color: #fc0;
+    color: black;
     cursor: pointer;
 }
 
 .footer-content button:hover {
-    background-color: rgb(145, 2, 158);
+    background-color: #f90;
 }
 
 .button-container {
