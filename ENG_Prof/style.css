@@ -157,6 +157,7 @@ body {
 }
 
 footer {
+    position: fixed; /* Change to relative */
     margin-top: auto; /* Add this line */
     left: 0;
     bottom: 0;

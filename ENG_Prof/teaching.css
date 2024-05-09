@@ -243,6 +243,7 @@ h2 {
     border-bottom: 2px solid black;
 }
 footer {
+    position: fixed; /* Change to relative */
     margin-top: auto; /* Add this line */
     left: 0;
     bottom: 0;
