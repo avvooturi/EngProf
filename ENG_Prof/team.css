@@ -462,7 +462,7 @@ hr {
   display: flex;
   flex-direction: column;
   height: 400px;
-  overflow: auto;
+  overflow: visible;
   margin: 10px;
   justify-content: center;
   align-items: center;
@@ -580,4 +580,23 @@ hr {
 .leaderLinks img:last-child {
   margin-right: 2px;
   margin-left: 2px;
+}
+
+.leaderProfile::after {
+  content: attr(data-description); /* Use the data-description attribute as the content */
+  position: absolute;
+  bottom: -30px; /* Adjust this value as needed */
+  left: 0;
+  right: 0;
+  background: #000;
+  color: #fff;
+  opacity: 0;
+  padding: 5px;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+.leaderProfile:hover::after {
+  opacity: 1; /* Show the description when the mouse hovers over the box */
 }
