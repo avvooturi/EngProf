@@ -361,6 +361,20 @@ footer {
   margin-bottom: 5%
 }
 
+.miniHeader {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2vw;
+  font-weight: 100;
+  color: white;
+  margin-bottom: 5%
+}
+
+hr {
+  border: none; /* Remove the default border */
+  height: 3px; /* Set the height/thickness of the HR */
+  background-color: #333; /* Set the color */
+}
+
 @media(max-width: 600px) {
   .mainHeader
   {
@@ -371,9 +385,7 @@ footer {
 .leadershipRolesRow1 {
   margin-bottom: 5%;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  margin-top: 50px;
+  justify-content: space-evenly;
 }
 
 @media(max-width: 600px)
@@ -421,6 +433,24 @@ footer {
   }
 }
 
+.leadershipRolesRow4 {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+@media(max-width: 600px)
+{
+  .leadershipRolesRow4
+  {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0%;
+  }
+}
+
 .leaderProfile {
   position: relative;
   width: 30%;
@@ -428,7 +458,7 @@ footer {
   transition: 0.3s;
   border-radius: 25px;
   padding: 20px;
-  background-color: #dca7ff;
+  background-color: #aeb447;
   display: flex;
   flex-direction: column;
   height: 400px;
