@@ -20,7 +20,7 @@ body {
 
 .background {
     width: 100%;
-    background-image: url('imgs_folder/other_img.jpg');
+    background-image: url('imgs_folder/mag_field.png');
     height: 33vh;
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@ body {
 .text-container {
     width: 90%;
     height: 305px; /* Increased height to fill the remaining space */
-    padding: 10px; /* Padding is now applied to the text container */
+    padding: 15px; /* Padding is now applied to the text container */
 }
 
 /* Responsive layout - makes the menu and the content stack on top of each other */
@@ -132,15 +132,15 @@ body {
 }
 
 .text-container-side {
-    width: 60%; /* Adjusted width to fill the remaining space */
-    height: 100%;
+    width: 50%; /* Adjusted width to fill the remaining space */
+    height: 90%;
     padding: 10px; /* Padding is now applied to the text container */
     font-size: 1vw; /* Font size changes based on the width of the viewport */
 }
 
 .image-container-side {
-    width: 40%; /* Adjusted width */
-    height: 100%;
+    width: 75%; /* Adjusted width */
+    height: 75%;
     padding: 0; /* Add this line */
 }
 
