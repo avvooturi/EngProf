@@ -2,7 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
 }
 
 body {
@@ -10,12 +9,6 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-}
-
-.header {
-    background: black; /* Add this line */
-    background-size: cover; /* Add this line */
-    background-repeat: no-repeat; /* Add this line */
 }
 
 .background {
@@ -156,18 +149,6 @@ body {
     padding-left: 20px;
 }
 
-footer {
-    position: relative; /* Change to relative */
-    margin-top: auto; /* Add this line */
-    left: 0;
-    bottom: 0;
-    flex-shrink: 0;
-    background-color: rgb(255, 216, 59);
-    color: black;
-    padding: 20px;
-    text-align: left;
-}
-
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -231,30 +212,14 @@ footer {
     border-radius: 20px; /* Adjust this value to get the desired roundness */
 }
 
-@keyframes slideInFromBottom {
-    0% {
-        transform: translateY(50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(50%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 /* CSS for larger screens */
 @media (min-width: 601px) {
+    .header {
+        background: black; /* Add this line */
+        background-size: cover; /* Add this line */
+        background-repeat: no-repeat; /* Add this line */
+    }    
+
     .navbar a {
         float: left;
         display: block;
@@ -272,26 +237,169 @@ footer {
     .column, .column-side {
         width: 25%;
     }
+
+    footer {
+        position: relative; /* Change to relative */
+        margin-top: auto; /* Add this line */
+        left: 0;
+        bottom: 0;
+        flex-shrink: 0;
+        background-color: rgb(255, 216, 59);
+        color: black;
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    @keyframes slideInFromBottom {
+        0% {
+            transform: translateY(50%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(50%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+/* CSS for mobile screens */
+@media only screen and (min-width: 768px) {
+    .column, .column-side {
+        width: 45%;
+    }
+
+    .column-side {
+        flex: 1; /* Added this line */
+        padding: 0; /* Set padding to 0 */
+        box-sizing: border-box;
+        background-color: black; /* Black background */
+        color: white; /* White text */
+        font-family: Arial, sans-serif; /* Use a modern sans-serif font */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 25px; /* Add this line */
+        animation: slideInFromRight 2s ease-out forwards;
+    }
+
+    .text-container-side {
+        width: 50%; /* Adjusted width to fill the remaining space */
+        height: 90%;
+        padding: 10px; /* Padding is now applied to the text container */
+        font-size: 1.35vw; /* Font size changes based on the width of the viewport */
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .text-container {
+        width: 55%;
+        height: 175px;
+        padding: 15px;
+    }
+
+    .text-container-side {
+        width: 50%; /* Adjusted width to fill the remaining space */
+        height: 90%;
+        padding: 10px; /* Padding is now applied to the text container */
+        font-size: 1vw; /* Font size changes based on the width of the viewport */
+    }
 }
 
 /* CSS for mobile screens */
 @media (max-width: 600px) {
+    .header {
+        background: black; /* Add this line */
+        background-size: cover; /* Add this line */
+        background-repeat: no-repeat; /* Add this line */
+    }
+    
     .navbar {
         display: flex;
         justify-content: space-around;
     }
 
     .navbar a {
-        float: none;
+        float: left;
         display: block;
+        color: black;
         text-align: center;
-    }
+        padding: 14px 4px; /* Reduced horizontal padding */
+        text-decoration: none;
+    }    
 
     .row {
         flex-direction: column;
+        margin-bottom: 20px; /* Add some space between rows */
     }
 
     .column, .column-side {
-        width: 100%;
+        width: 100%; /* Change width to 100% */
+        margin: 0; /* Remove horizontal margins */
+        padding: 10px; /* Add some padding inside the columns */
     }
+
+    .text-container, .text-container-side {
+        height: auto; /* Let the height be determined by the content */
+        padding: 10px; /* Decrease padding */
+        font-size: 4vw; /* Increase the font size for mobile view */
+    }
+
+    .image-container, .image-container-side {
+        height: auto; /* Let the height be determined by the content */
+    }
+
+    .left_img, .right_img, .side_img {
+        height: auto; /* Let the height be determined by the content */
+    }
+
+    footer {
+        position: relative; /* Change to relative */
+        margin-top: auto; /* Add this line */
+        left: 0;
+        bottom: 25px;
+        flex-shrink: 0;
+        background-color: rgb(255, 216, 59);
+        color: black;
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+/* CSS for mobile screens */
+@media only screen and (min-width: 425px) {
+    .navbar a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 8px; /* Reduced horizontal padding */
+        text-decoration: none;
+    }    
+}
+
+/* CSS for mobile screens */
+@media (max-width: 320px) {
+    .navbar a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 2px; /* Reduced horizontal padding */
+        text-decoration: none;
+        font-size: 14px;
+    }    
 }
