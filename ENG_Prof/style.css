@@ -252,3 +252,46 @@ footer {
         opacity: 1;
     }
 }
+
+/* CSS for larger screens */
+@media (min-width: 601px) {
+    .navbar a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .column, .column-side {
+        width: 25%;
+    }
+}
+
+/* CSS for mobile screens */
+@media (max-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column, .column-side {
+        width: 100%;
+    }
+}
