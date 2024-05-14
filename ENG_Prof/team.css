@@ -169,12 +169,6 @@ footer {
   justify-content: center;
 }
 
-.footer-content p {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .footer-content button {
   margin-top: 10px;
   padding: 10px 20px;
@@ -274,6 +268,11 @@ footer {
   animation: slideInFromRight 2s ease-out forwards;
 }
 
+.leadershipRolesRow4 .leaderProfile {
+  opacity: 0;
+  animation: slideInFromLeft 2s ease-out forwards;
+}
+
 .leadershipRolesRow1 .leaderProfile:nth-child(1) {
   animation-delay: 0.25s;
 }
@@ -332,6 +331,26 @@ footer {
 
 .leadershipRolesRow3 .leaderProfile:nth-child(5) {
   animation-delay: 1.25s;
+}
+
+.leadershipRolesRow4 .leaderProfile:nth-child(1) {
+  animation-delay: 1.25s;
+}
+
+.leadershipRolesRow4 .leaderProfile:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.leadershipRolesRow4 .leaderProfile:nth-child(3) {
+  animation-delay: 0.75s;
+}
+
+.leadershipRolesRow4 .leaderProfile:nth-child(4) {
+  animation-delay: 0.5s;
+}
+
+.leadershipRolesRow4 .leaderProfile:nth-child(5) {
+  animation-delay: 0.25s;
 }
 
 @media (max-width: 600px) 
@@ -543,7 +562,7 @@ hr {
       display: block;
       color: black;
       text-align: center;
-      padding: 14px 4px; /* Reduced horizontal padding */
+      padding: 14px 13px; /* Reduced horizontal padding */
       text-decoration: none;
   }
 
@@ -568,6 +587,13 @@ hr {
     to {
       opacity: 1;
     }
+  }
+
+  .footer-content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
   }
 }
 
@@ -677,6 +703,13 @@ hr {
     transition: opacity 0.3s ease-in-out;
     font-size: 16px;
     white-space: pre-wrap; /* Add this line */
+  }
+
+  .footer-content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
   }
 }
 
