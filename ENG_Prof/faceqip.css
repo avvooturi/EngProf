@@ -198,95 +198,47 @@ body {
     cursor: pointer;
 }
 
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.additional_description {
+    color: white;
+    text-align: center;
 }
 
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.additional_description a {
+    color: yellow;
+    text-decoration: none;
 }
 
-.movie,
-.game {
-    display: inline-block;
-    width: 150px;
-    height: 200px;
-    background-color: #ddd;
-    margin: 10px;
-    position: relative;
-    opacity: 0;
+.additional_description a:hover {
+    text-decoration: underline; /* Adds the underline when hovered */
 }
 
-.movie {
-    animation: slideInFromRight 1s ease-out forwards;
-    /* Remove the opacity property */
-}
-
-.game {
-    animation: slideInFromLeft 1s ease-out forwards;
-    /* Remove the opacity property */
-}
-
-
-.movie-image {
-    animation: slideInFromRight 1s ease-out forwards;
-}
-
-.movie:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.movie:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-.movie:nth-child(3) {
-    animation-delay: 1s;
-}
-
-.movie:nth-child(4) {
-    animation-delay: 1.5s;
-}
-
-.movie:nth-child(5) {
-    animation-delay: 2s;
-}
-
-.game:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.game:nth-child(2) {
-    animation-delay: 0.5s;
-}
-
-.game:nth-child(3) {
-    animation-delay: 1s;
-}
-
-.game:nth-child(4) {
-    animation-delay: 1.5s;
-}
-
-.game:nth-child(5) {
-    animation-delay: 2s;
+.additional_description a:visited {
+    color: yellow;
 }
 
 @media(min-width: 601px) {
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
     .flex-container {
         display: flex;
         justify-content: space-between; /* Optional: Adds space between the columns */
@@ -300,6 +252,60 @@ body {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 10px;
+    }
+
+    .movies-container {
+        padding-bottom: 75px;
+    }
+
+    .movie,
+    .game {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    background-color: #ddd;
+    margin: 10px;
+    position: relative;
+    opacity: 0;
+    }
+
+    .movie {
+    animation: slideInFromRight 1s ease-out forwards;
+    /* Remove the opacity property */
+    }
+
+    .game {
+    animation: slideInFromLeft 1s ease-out forwards;
+    /* Remove the opacity property */
+    }
+
+
+    .movie-image {
+    animation: slideInFromRight 1s ease-out forwards;
+    }
+
+    .movie:nth-child(1) {
+    animation-delay: 0s;
+    }
+
+    .movie:nth-child(2) {
+    animation-delay: 0.5s;
+    }
+
+    .movie:nth-child(3) {
+    animation-delay: 1s;
+    }
+
+    .movie:nth-child(4) {
+    animation-delay: 1.5s;
+    }
+
+    .movie:nth-child(5) {
+    animation-delay: 2s;
+    }
+
+    .movie:nth-child(6) {
+    animation-delay: 2.5s;
     }
     
     footer {
@@ -321,6 +327,7 @@ body {
         text-align: center;
         font-size: 20px;
     }
+    
 }
 
 @media(max-width: 600px) {
@@ -334,8 +341,9 @@ body {
         display: block;
         color: black;
         text-align: center;
-        padding: 14px 10px; /* Reduced horizontal padding */
+        padding: 14px 4px; /* Reduced horizontal padding */
         text-decoration: none;
+        font-size: 3.5vw;
     }
 
     .flex-container {
@@ -368,5 +376,12 @@ body {
         padding: 0;
         text-align: center;
         font-size: 13px;
-      }
+    }
+
+    .additional_description {
+        color: white;
+        text-align: center;
+        width: 80%;
+        padding-left: 10%;
+    }
 }

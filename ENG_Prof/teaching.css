@@ -26,7 +26,7 @@ footer {
 .leaderContent {
     position: absolute;
     top: 15%;
-    left: 20%;
+    left: 30%;
 }
 
 .column, .column-side {
@@ -44,12 +44,6 @@ footer {
         opacity: 1;
         visibility: visible;
     }
-}
-
-.wrapCntr {
-    display: inline-block;
-    margin-top: 250px;
-    margin-left: 10px;
 }
 
 .column {
@@ -80,6 +74,7 @@ footer {
 .wholeCntr {
     display: flex;
     justify-content: space-between; /* Adjust as needed */
+    margin-left: 10%;
 }
 
 h2 {
@@ -114,7 +109,7 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 80px;
+    margin: 0 auto; /* Add auto margins to center horizontally */
     margin-top: 20px;
     width: 70%;
     opacity: 0;
@@ -193,6 +188,7 @@ h2 {
         width: 55%;
         text-align: center;
         margin-top: 100px;
+        margin-left: 22%;
         color: white;
     }
 
@@ -202,6 +198,12 @@ h2 {
         border-radius: 100%;
     }
     
+    .wrapCntr {
+        display: inline-block;
+        margin-top: 125px;
+        margin-left: 10px;
+    }
+
     .footer-content p {
         margin: 0;
         padding: 0;
@@ -375,7 +377,7 @@ footer {
     .text-container, .text-container-side {
         height: auto; /* Let the height be determined by the content */
         padding: 10px; /* Decrease padding */
-        font-size: 6vw; /* Increase the font size for mobile view */
+        font-size: 6vw;
     }
 
     .image-container, .image-container-side {
@@ -389,12 +391,14 @@ footer {
     .wholeCntr {
         display: inline;
         margin-top: 35%;
+        margin-left: 0%;
     }
 
     .wrapCntr {
-        display: inline-block;
-        margin-left: 10px;
-        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     footer {

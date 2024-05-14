@@ -13,7 +13,6 @@ body {
 
 .background {
     width: 100%;
-    background-image: url('imgs_folder/mag_field.png');
     height: 33vh;
     display: flex;
     align-items: center;
@@ -21,6 +20,11 @@ body {
     z-index: 1; /* Add this line */
     background-size: cover; /* Add this line */
     background-repeat: no-repeat; /* Add this line */
+}
+
+.logo {
+    height: 80%;
+    margin-top: 3%;
 }
 
 .navbar {
@@ -49,7 +53,7 @@ body {
     animation: fadeIn 3s;
     font-size: 2em;
     font-family: Arial, sans-serif;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -147,6 +151,7 @@ body {
     color: white; /* White text */
     font-family: Arial, sans-serif;
     padding-left: 20px;
+    text-align: center;
 }
 
 .footer-content {
@@ -339,7 +344,24 @@ body {
         text-align: center;
         padding: 14px 13px; /* Reduced horizontal padding */
         text-decoration: none;
-    }    
+    }
+
+    .background {
+        width: 45%;
+        height: 33vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .logo {
+        height: 50%;
+        margin-top: 3%;
+        margin-left: 123%;
+    }
 
     .row {
         flex-direction: column;
@@ -386,7 +408,7 @@ body {
         display: block;
         color: black;
         text-align: center;
-        padding: 14px 8px; /* Reduced horizontal padding */
+        padding: 14px 6px; /* Reduced horizontal padding */
         text-decoration: none;
     }    
 }
