@@ -256,30 +256,6 @@ body {
     }
 }
 
-@media only screen and (min-width: 1024px) {
-    @keyframes slideInFromBottom {
-        0% {
-            transform: translateY(50%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideInFromRight {
-        0% {
-            transform: translateX(50%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-}
-
 /* CSS for mobile screens */
 @media only screen and (min-width: 768px) {
     .column, .column-side {
@@ -355,6 +331,7 @@ body {
         z-index: 1;
         background-size: cover;
         background-repeat: no-repeat;
+        margin-top: 15px;
     }
 
     .logo {

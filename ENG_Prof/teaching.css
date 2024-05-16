@@ -29,6 +29,15 @@ footer {
     left: 30%;
 }
 
+@media(max-width: 600px) {
+    .leaderContent {
+        position: absolute;
+        top: 20%;
+        left: 30%;
+    }
+    
+}
+
 .column, .column-side {
     animation: fadeIn 5s ease-in-out;
 }
@@ -201,7 +210,7 @@ h2 {
     .wrapCntr {
         display: inline-block;
         margin-top: 125px;
-        margin-left: 10px;
+        margin-left: 140px;
     }
 
     .footer-content p {

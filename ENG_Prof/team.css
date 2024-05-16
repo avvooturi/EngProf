@@ -156,7 +156,7 @@ footer {
   left: 0;
   bottom: 0;
   flex-shrink: 0;
-  background-color: rgb(255, 216, 59);
+  background-color: #fc0;
   color: black;
   padding: 20px;
   text-align: left;
@@ -229,128 +229,6 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(150%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-150%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.leadershipRolesRow1 .leaderProfile {
-  opacity: 0;
-  animation: slideInFromRight 2s ease-out forwards;
-}
-
-.leadershipRolesRow2 .leaderProfile {
-  opacity: 0;
-  animation: slideInFromLeft 2s ease-out forwards;
-}
-
-.leadershipRolesRow3 .leaderProfile {
-  opacity: 0;
-  animation: slideInFromRight 2s ease-out forwards;
-}
-
-.leadershipRolesRow4 .leaderProfile {
-  opacity: 0;
-  animation: slideInFromLeft 2s ease-out forwards;
-}
-
-.leadershipRolesRow1 .leaderProfile:nth-child(1) {
-  animation-delay: 0.25s;
-}
-
-.leadershipRolesRow1 .leaderProfile:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.leadershipRolesRow1 .leaderProfile:nth-child(3) {
-  animation-delay: 0.75s;
-}
-
-.leadershipRolesRow1 .leaderProfile:nth-child(4) {
-  animation-delay: 1s;
-}
-
-.leadershipRolesRow1 .leaderProfile:nth-child(5) {
-  animation-delay: 1.25s;
-}
-
-.leadershipRolesRow2 .leaderProfile:nth-child(1) {
-  animation-delay: 1.25s;
-}
-
-.leadershipRolesRow2 .leaderProfile:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.leadershipRolesRow2 .leaderProfile:nth-child(3) {
-  animation-delay: 0.75s;
-}
-
-.leadershipRolesRow2 .leaderProfile:nth-child(4) {
-  animation-delay: 0.5s;
-}
-
-.leadershipRolesRow2 .leaderProfile:nth-child(5) {
-  animation-delay: 0.25s;
-}
-
-.leadershipRolesRow3 .leaderProfile:nth-child(1) {
-  animation-delay: 0.25s;
-}
-
-.leadershipRolesRow3 .leaderProfile:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-.leadershipRolesRow3 .leaderProfile:nth-child(3) {
-  animation-delay: 0.75s;
-}
-
-.leadershipRolesRow3 .leaderProfile:nth-child(4) {
-  animation-delay: 1s;
-}
-
-.leadershipRolesRow3 .leaderProfile:nth-child(5) {
-  animation-delay: 1.25s;
-}
-
-.leadershipRolesRow4 .leaderProfile:nth-child(1) {
-  animation-delay: 1.25s;
-}
-
-.leadershipRolesRow4 .leaderProfile:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.leadershipRolesRow4 .leaderProfile:nth-child(3) {
-  animation-delay: 0.75s;
-}
-
-.leadershipRolesRow4 .leaderProfile:nth-child(4) {
-  animation-delay: 0.5s;
-}
-
-.leadershipRolesRow4 .leaderProfile:nth-child(5) {
-  animation-delay: 0.25s;
 }
 
 @media (max-width: 600px) 
@@ -531,7 +409,7 @@ hr {
     transition: 0.3s;
     border-radius: 25px;
     padding: 20px;
-    background-color: #aeb447;
+    background-color: #fc0;
     display: flex;
     flex-direction: column;
     height: 35%;
@@ -695,6 +573,128 @@ hr {
 
 @media(min-width: 601px)
 {
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .leadershipRolesRow1 .leaderProfile {
+    opacity: 0;
+    animation: slideInFromRight 2s ease-out forwards;
+  }
+  
+  .leadershipRolesRow2 .leaderProfile {
+    opacity: 0;
+    animation: slideInFromLeft 2s ease-out forwards;
+  }
+  
+  .leadershipRolesRow3 .leaderProfile {
+    opacity: 0;
+    animation: slideInFromRight 2s ease-out forwards;
+  }
+  
+  .leadershipRolesRow4 .leaderProfile {
+    opacity: 0;
+    animation: slideInFromLeft 2s ease-out forwards;
+  }
+  
+  .leadershipRolesRow1 .leaderProfile:nth-child(1) {
+    animation-delay: 0.25s;
+  }
+  
+  .leadershipRolesRow1 .leaderProfile:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .leadershipRolesRow1 .leaderProfile:nth-child(3) {
+    animation-delay: 0.75s;
+  }
+  
+  .leadershipRolesRow1 .leaderProfile:nth-child(4) {
+    animation-delay: 1s;
+  }
+  
+  .leadershipRolesRow1 .leaderProfile:nth-child(5) {
+    animation-delay: 1.25s;
+  }
+  
+  .leadershipRolesRow2 .leaderProfile:nth-child(1) {
+    animation-delay: 1.25s;
+  }
+  
+  .leadershipRolesRow2 .leaderProfile:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .leadershipRolesRow2 .leaderProfile:nth-child(3) {
+    animation-delay: 0.75s;
+  }
+  
+  .leadershipRolesRow2 .leaderProfile:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+  
+  .leadershipRolesRow2 .leaderProfile:nth-child(5) {
+    animation-delay: 0.25s;
+  }
+  
+  .leadershipRolesRow3 .leaderProfile:nth-child(1) {
+    animation-delay: 0.25s;
+  }
+  
+  .leadershipRolesRow3 .leaderProfile:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .leadershipRolesRow3 .leaderProfile:nth-child(3) {
+    animation-delay: 0.75s;
+  }
+  
+  .leadershipRolesRow3 .leaderProfile:nth-child(4) {
+    animation-delay: 1s;
+  }
+  
+  .leadershipRolesRow3 .leaderProfile:nth-child(5) {
+    animation-delay: 1.25s;
+  }
+  
+  .leadershipRolesRow4 .leaderProfile:nth-child(1) {
+    animation-delay: 1.25s;
+  }
+  
+  .leadershipRolesRow4 .leaderProfile:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .leadershipRolesRow4 .leaderProfile:nth-child(3) {
+    animation-delay: 0.75s;
+  }
+  
+  .leadershipRolesRow4 .leaderProfile:nth-child(4) {
+    animation-delay: 0.5s;
+  }
+  
+  .leadershipRolesRow4 .leaderProfile:nth-child(5) {
+    animation-delay: 0.25s;
+  }
+
   .leaderProfile::after {
     content: attr(data-description);
     position: absolute;
