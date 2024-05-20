@@ -374,8 +374,8 @@ hr {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  top: 90%;
-  right: 0;
+  top: 10px;
+  right: 10px;
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
@@ -456,7 +456,7 @@ hr {
     padding: 5px;
     text-align: center;
     border-radius: 10px;
-    font-size: 11px;
+    font-size: 10px;
     white-space: pre-wrap;
     opacity: 0;
     animation: fadeIn 0.3s ease-in-out forwards;
@@ -559,8 +559,9 @@ hr {
 }
 
 .leaderLinks img:last-child {
-  margin-right: 2px;
-  margin-left: 2px;
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 120%; /* Adjust as needed */
 }
 
 .leaderPicture {
@@ -698,7 +699,7 @@ hr {
   .leaderProfile::after {
     content: attr(data-description);
     position: absolute;
-    bottom: -24%;
+    bottom: 0%;
     border-radius: 10px;
     left: 0;
     right: 0;
