@@ -456,7 +456,7 @@ hr {
     padding: 5px;
     text-align: center;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 11px;
     white-space: pre-wrap;
     opacity: 0;
     animation: fadeIn 0.3s ease-in-out forwards;
