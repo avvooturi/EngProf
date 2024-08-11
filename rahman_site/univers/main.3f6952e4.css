@@ -997,7 +997,7 @@ pre code {
     margin-left: -15px;
     margin-right: -15px;
     padding-bottom: 25px;
-    margin-top: 50px
+    margin-top: 75px
 }
 
 .row:after,
@@ -6435,4 +6435,39 @@ textarea {
     height: auto;
     border-radius: 8px; /* Optional: rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+}
+
+.blog-title a {
+    text-decoration: none;
+    color: inherit; /* Inherit the current text color */
+    transition: color 0.3s ease;
+}
+  
+.blog-title a:hover {
+    color: #007bff; /* Change this to your desired hover color */
+}
+
+.blog-content p {
+    font-size: 15px; /* Increase the text size */
+    line-height: 1; /* Adjust line height for better readability */
+}
+
+.blog-image-container {
+    display: flex;
+    gap: 10px; /* Adjust the space between images */
+    justify-content: center;
+}
+
+.blog-image {
+    max-width: 300px; /* Set the max-width for each image */
+    height: 240px;
+    border-radius: 20px; /* Optional: rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
+    padding: 10px;
+}
+
+
+.section-container-spacer h2.blog-title {
+    font-size: 28px; /* Increase the title size */
+    margin-bottom: 20px; /* Add space below the title */
 }
