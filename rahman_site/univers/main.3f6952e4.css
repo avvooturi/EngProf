@@ -6428,6 +6428,7 @@ textarea {
 .blog-text {
     flex: 1;
     margin-right: 20px;
+    color: white;
 }
 
 .blog-image img {
@@ -6437,10 +6438,17 @@ textarea {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: slight shadow */
 }
 
+.blog-title {
+    font-size: 24px; /* Set your preferred font size */
+    padding: 0; /* Remove any default padding */
+    text-align: left; /* Ensure the title is left-aligned */
+}
+
 .blog-title a {
     text-decoration: none;
     color: inherit; /* Inherit the current text color */
     transition: color 0.3s ease;
+    display: inline-block; /* Ensure the link behaves like inline text */
 }
   
 .blog-title a:hover {
@@ -6470,4 +6478,14 @@ textarea {
 .section-container-spacer h2.blog-title {
     font-size: 28px; /* Increase the title size */
     margin-bottom: 20px; /* Add space below the title */
+}
+
+#category-list a {
+    color: white; /* Set the default text color to white */
+    text-decoration: none; /* Remove underline from the links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#category-list a:hover {
+    color: #007bff; /* Change the text color to blue on hover */
 }
