@@ -5818,7 +5818,7 @@ body.minimal {
 
 .hero-image {
     height: 40%; /* Adjust this value as needed */
-    width: auto; /* This will maintain the aspect ratio of the image */
+    width: 40%; /* This will maintain the aspect ratio of the image */
     margin-right: 10px;
     margin-top: 110px;
 }
