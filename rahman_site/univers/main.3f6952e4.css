@@ -6532,7 +6532,7 @@ textarea {
     align-items: center;
     text-align: center;
     /* Center text inside the element */
-    height: 10vh;
+    height: 15vh;
     /* Optional: Adjust this to center vertically within a defined space */
     margin: 0 auto;
     /* Optional: To center the element itself */
