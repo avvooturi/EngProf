@@ -6489,3 +6489,12 @@ textarea {
 #category-list a:hover {
     color: #007bff; /* Change the text color to blue on hover */
 }
+
+.rahman-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text inside the element */
+    height: 10vh; /* Optional: Adjust this to center vertically within a defined space */
+    margin: 0 auto; /* Optional: To center the element itself */
+}
