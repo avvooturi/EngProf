@@ -6508,7 +6508,7 @@ textarea {
 .summary {
     display: flex; /* Creates two columns for its children */
     gap: 20px; /* Optional: Adds space between the columns */
-    margin-top: 40px;
+    margin-top: 75px;
     text-align: center;
 }
 
@@ -6521,4 +6521,13 @@ textarea {
 
 h2, h3 {
     margin: 0 0 10px 0; /* Adds some spacing between elements */
+}
+
+@media (max-width:767px) {
+    .sum-title {
+        font-size: 17px;
+    }
+    .sum-desc {
+        font-size: 11px;
+    }
 }
