@@ -497,9 +497,11 @@ h6 small {
 .h1,
 .h2,
 .h3,
+.h4,
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin-top: 19px;
     margin-bottom: 9.5px
 }
@@ -4811,6 +4813,10 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
     border-radius: .25em
 }
 
+h4 {
+    color: white;
+}
+
 .label:empty {
     display: none
 }
@@ -5878,7 +5884,7 @@ body.minimal {
         margin-top: 0;
         /* Remove top margin */
         flex: 1 1 auto;
-        max-width: 135px;
+        max-width: 105px;
         height: 135px;
     }
 }
@@ -6497,4 +6503,22 @@ textarea {
     text-align: center; /* Center text inside the element */
     height: 10vh; /* Optional: Adjust this to center vertically within a defined space */
     margin: 0 auto; /* Optional: To center the element itself */
+}
+
+.summary {
+    display: flex; /* Creates two columns for its children */
+    gap: 20px; /* Optional: Adds space between the columns */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.accomplishments,
+.interests {
+    flex: 1; /* Makes both sections take equal width */
+    display: flex;
+    flex-direction: column; /* Ensures all text elements stack vertically */
+}
+
+h2, h3 {
+    margin: 0 0 10px 0; /* Adds some spacing between elements */
 }
