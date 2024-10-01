@@ -5980,7 +5980,7 @@ h2:before {
     content: "";
     position: absolute;
     height: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     width: 1px
 }
 
