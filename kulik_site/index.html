@@ -18,118 +18,126 @@
   <style>
     body.light-mode {
       padding: 10px;
-    min-height: 100vh;
-    background-color: beige;
+      min-height: 100vh;
+      background-color: beige;
     }
+
+    /* Use a descendant selector to target h2 elements inside the body.light-mode */
+    body.light-mode h2 {
+      color: black;
+    }
+
     body.dark-mode {
       padding: 10px;
-    min-height: 100vh;
-    background-color: black;
+      min-height: 100vh;
+      background-color: black;
+    }
+
+    body.dark-mode h2 {
+      color: white; /* Ensure text is white in dark mode */
     }
   </style>
 </head>
 
 <body class="minimal light-mode">
+  <!-- Header with Theme Toggle Button -->
+  <header>
+    <nav class="navbar navbar-fixed-top navbar-inverse light-mode">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
 
-<!-- Header with Theme Toggle Button -->
-<header>
-  <nav class="navbar navbar-fixed-top navbar-inverse light-mode">
-    <div class="container">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./blog.html" title="">02 : News</a></li>
-          <li><a href="./research.html" title="">03 : Research</a></li>
-          <li><a href="./about.html" title="">04 : Team</a></li>
-          <li><a href="./works.html" title="">05 : Facilities</a></li>
-          <li><a href="./components.html" title="">06 : Teachings</a></li>
-        </ul>
-        <!-- Dark/Light Mode Toggle Button -->
-        <button id="theme-toggle" class="btn btn-default navbar-btn pull-right">Toggle Dark Mode</button>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="./index.html" title="">01 : Home</a></li>
+            <li><a href="./blog.html" title="">02 : News</a></li>
+            <li><a href="./research.html" title="">03 : Research</a></li>
+            <li><a href="./about.html" title="">04 : Team</a></li>
+            <li><a href="./works.html" title="">05 : Facilities</a></li>
+            <li><a href="./components.html" title="">06 : Teachings</a></li>
+          </ul>
+          <!-- Dark/Light Mode Toggle Button -->
+          <button id="theme-toggle" class="btn btn-default navbar-btn pull-right">Toggle Dark Mode</button>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
-<div class="image-container">
-  <img class="hero-image" src="./assets/images/newlogo.png">
-</div>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="hero-full-wrapper">
-        <div class="text-content">
-          <h2>
-            <span id="typed-strings">
-              <span>Our lab's mission is to combine intricate physics 
-                and novel material science to unlock new magnetic devices 
-                and sensors.</span>
-            </span>
-            <span id="typed"></span>
-          </h2>
+  <div class="image-container">
+    <img class="hero-image" src="./assets/images/newlogo.png">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="hero-full-wrapper">
+          <div class="text-content">
+            <h2>
+              <span id="typed-strings">
+                <span>Our lab's mission is to combine intricate physics 
+                  and novel material science to unlock new magnetic devices 
+                  and sensors.</span>
+              </span>
+              <span id="typed"></span>
+            </h2>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="image-container">
-  <img class="other_image" src="./assets/images/cir1_image.png">
-  <img class="other_image" src="./assets/images/cir2_image.png">
-  <img class="other_image" src="./assets/images/cir3_image.png">
-</div>
-<div class="image-container">
-  <img class="micro_other_image" src="./assets/images/micro1_image.png">
-  <img class="micro_other_image" src="./assets/images/micro2_image.png">
-  <img class="micro_other_image" src="./assets/images/micro3_image.png">
-</div>
+  <div class="image-container">
+    <img class="other_image" src="./assets/images/cir1_image.png">
+    <img class="other_image" src="./assets/images/cir2_image.png">
+    <img class="other_image" src="./assets/images/cir3_image.png">
+  </div>
+  <div class="image-container">
+    <img class="micro_other_image" src="./assets/images/micro1_image.png">
+    <img class="micro_other_image" src="./assets/images/micro2_image.png">
+    <img class="micro_other_image" src="./assets/images/micro3_image.png">
+  </div>
 
-<!-- Script to Handle Dark/Light Mode Toggle -->
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-    // Get references to the body and toggle button
-    const body = document.body;
-    const themeToggleBtn = document.getElementById('theme-toggle');
-    const navbar = document.querySelector('.navbar-inverse');
+  <!-- Script to Handle Dark/Light Mode Toggle -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      // Get references to the body and toggle button
+      const body = document.body;
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      const navbar = document.querySelector('.navbar-inverse');
 
-    // Check for saved user preference in localStorage
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
+      // Check for saved user preference in localStorage
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      setTheme(savedTheme);
 
-    // Set theme based on user preference
-    function setTheme(theme) {
-      if (theme === 'dark') {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-        navbar.classList.remove('light-mode');
-        navbar.classList.add('dark-mode');
-        localStorage.setItem('theme', 'dark');
-        themeToggleBtn.textContent = 'Switch to Light Mode';
-      } else {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-        navbar.classList.remove('dark-mode');
-        navbar.classList.add('light-mode');
-        localStorage.setItem('theme', 'light');
-        themeToggleBtn.textContent = 'Switch to Dark Mode';
+      // Set theme based on user preference
+      function setTheme(theme) {
+        if (theme === 'dark') {
+          body.classList.remove('light-mode');
+          body.classList.add('dark-mode');
+          navbar.classList.remove('light-mode');
+          navbar.classList.add('dark-mode');
+          localStorage.setItem('theme', 'dark');
+          themeToggleBtn.textContent = 'Switch to Light Mode';
+        } else {
+          body.classList.remove('dark-mode');
+          body.classList.add('light-mode');
+          navbar.classList.remove('dark-mode');
+          navbar.classList.add('light-mode');
+          localStorage.setItem('theme', 'light');
+          themeToggleBtn.textContent = 'Switch to Dark Mode';
+        }
       }
-    }
 
-    // Add event listener to toggle button
-    themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-      setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      // Add event listener to toggle button
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+      });
     });
-  });
-</script>
-<script type="text/javascript" src="./main.70a66962.js"></script>
-
+  </script>
+  <script type="text/javascript" src="./main.70a66962.js"></script>
 </body>
 </html>
