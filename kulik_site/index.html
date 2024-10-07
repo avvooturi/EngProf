@@ -22,7 +22,6 @@
       background-color: beige;
     }
 
-    /* Use a descendant selector to target h2 elements inside the body.light-mode */
     body.light-mode h2 {
       color: black;
     }
@@ -40,7 +39,6 @@
 </head>
 
 <body class="minimal light-mode">
-  <!-- Header with Theme Toggle Button -->
   <header>
     <nav class="navbar navbar-fixed-top navbar-inverse light-mode">
       <div class="container">
@@ -59,7 +57,6 @@
             <li><a href="./components.html" title="">04 : Teachings</a></li>
             <li><a href="./works.html" title="">05 : Capapbilities (Facilities & Equipment)</a></li>
           </ul>
-          <!-- Dark/Light Mode Toggle Button -->
           <button id="theme-toggle" class="btn btn-default navbar-btn pull-right">Toggle Dark Mode</button>
         </div>
       </div>
@@ -76,9 +73,7 @@
           <div class="text-content">
             <h2>
               <span id="typed-strings">
-                <span>Our lab's mission is to combine intricate physics 
-                  and novel material science to unlock new magnetic devices 
-                  and sensors.</span>
+                <span>Our laboratory’s mission is to advance the state of the art in magnetic devices and sensors by:</span>
               </span>
               <span id="typed"></span>
             </h2>
@@ -88,55 +83,55 @@
     </div>
   </div>
 
-  <div class="image-container">
-    <img class="other_image" src="./assets/images/cir1_image.png">
-    <img class="other_image" src="./assets/images/cir2_image.png">
-    <img class="other_image" src="./assets/images/cir3_image.png">
+  <div class="img_left">
+    <img class="other_image" src="./assets/images/fabrication.png">
+    <h4>Novel Fabrication Methods for Rapid Prototyping and Characterization</h4>
   </div>
-  <div class="image-container">
-    <img class="micro_other_image" src="./assets/images/micro1_image.png">
-    <img class="micro_other_image" src="./assets/images/micro2_image.png">
-    <img class="micro_other_image" src="./assets/images/micro3_image.png">
+  <div class="img_right">
+    <img class="micro_other_image" src="./assets/images/material_dev.jpg">
+    <h4>Material Development Leveraging Rapid Synthesis & Characterization</h4>
   </div>
-
-  <!-- Script to Handle Dark/Light Mode Toggle -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      // Get references to the body and toggle button
-      const body = document.body;
-      const themeToggleBtn = document.getElementById('theme-toggle');
-      const navbar = document.querySelector('.navbar-inverse');
-
-      // Check for saved user preference in localStorage
-      const savedTheme = localStorage.getItem('theme') || 'light';
-      setTheme(savedTheme);
-
-      // Set theme based on user preference
-      function setTheme(theme) {
-        if (theme === 'dark') {
-          body.classList.remove('light-mode');
-          body.classList.add('dark-mode');
-          navbar.classList.remove('light-mode');
-          navbar.classList.add('dark-mode');
-          localStorage.setItem('theme', 'dark');
-          themeToggleBtn.textContent = 'Switch to Light Mode';
-        } else {
-          body.classList.remove('dark-mode');
-          body.classList.add('light-mode');
-          navbar.classList.remove('dark-mode');
-          navbar.classList.add('light-mode');
-          localStorage.setItem('theme', 'light');
-          themeToggleBtn.textContent = 'Switch to Dark Mode';
-        }
-      }
-
-      // Add event listener to toggle button
-      themeToggleBtn.addEventListener('click', () => {
-        const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
-        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-      });
-    });
-  </script>
-  <script type="text/javascript" src="./main.70a66962.js"></script>
+  <div class="img_left">
+    <img class="micro_other_image" src="./assets/images/element_simulation.jpg">
+    <h4>Finite Element Simulations Utilizing Dynamic Material Properties</h4>
+  </div>
 </body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    // Get references to the body and toggle button
+    const body = document.body;
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const navbar = document.querySelector('.navbar-inverse');
+
+    // Check for saved user preference in localStorage
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+
+    // Set theme based on user preference
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        navbar.classList.remove('light-mode');
+        navbar.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+        themeToggleBtn.textContent = 'Switch to Light Mode';
+      } else {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        navbar.classList.remove('dark-mode');
+        navbar.classList.add('light-mode');
+        localStorage.setItem('theme', 'light');
+        themeToggleBtn.textContent = 'Switch to Dark Mode';
+      }
+    }
+
+    // Add event listener to toggle button
+    themeToggleBtn.addEventListener('click', () => {
+      const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+      setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+  });
+</script>
 </html>

@@ -5756,8 +5756,10 @@ body.minimal {
 .section-container {
     padding: 60px 0;
     background-color: black;
-    margin: 0 auto; /* Center the container */
-    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto;
+    /* Center the container */
+    max-width: 1200px;
+    /* Set a maximum width */
 }
 
 @media (min-width: 1200px) {
@@ -5768,14 +5770,16 @@ body.minimal {
 
 @media (max-width: 1200px) {
     .section-container {
-        width: 90%; /* Adjust the width for smaller screens */
+        width: 90%;
+        /* Adjust the width for smaller screens */
         padding: 60px 0;
     }
 }
 
 @media (max-width: 768px) {
     .section-container {
-        width: 100%; /* Full width on very small screens */
+        width: 100%;
+        /* Full width on very small screens */
         padding: 30px 0;
     }
 }
@@ -5813,12 +5817,15 @@ body.minimal {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0; /* Remove bottom margin */
+    margin-bottom: 0;
+    /* Remove bottom margin */
 }
 
 .hero-image {
-    height: 40%; /* Adjust this value as needed */
-    width: 40%; /* This will maintain the aspect ratio of the image */
+    height: 40%;
+    /* Adjust this value as needed */
+    width: 40%;
+    /* This will maintain the aspect ratio of the image */
     margin-right: 10px;
     margin-top: 110px;
 }
@@ -5827,10 +5834,13 @@ body.minimal {
     margin-right: 0;
 }
 
-.other_image, .micro_other_image {
+.other_image,
+.micro_other_image {
     height: 175px;
-    margin-bottom: 0; /* Remove bottom margin */
-    margin-top: 0; /* Remove top margin */
+    margin-bottom: 0;
+    /* Remove bottom margin */
+    margin-top: 0;
+    /* Remove top margin */
 }
 
 .team-image {
@@ -5842,26 +5852,37 @@ body.minimal {
 @media (max-width: 768px) {
     .image-container {
         display: flex;
-        flex-direction: row; /* Stack the images vertically */
-        justify-content: center; /* Vertically center the images */
-        align-items: center; /* Horizontally center the images */
-        height: auto; /* Make the container take up the full viewport height */
+        flex-direction: row;
+        /* Stack the images vertically */
+        justify-content: center;
+        /* Vertically center the images */
+        align-items: center;
+        /* Horizontally center the images */
+        height: auto;
+        /* Make the container take up the full viewport height */
         flex-wrap: wrap;
     }
-    
+
     .hero-image {
-        height: 250px; /* Adjust this value as needed */
-        width: auto; /* This will maintain the aspect ratio of the image */
-        margin-bottom: 10px; /* Add space below each image */
+        height: 250px;
+        /* Adjust this value as needed */
+        width: auto;
+        /* This will maintain the aspect ratio of the image */
+        margin-bottom: 10px;
+        /* Add space below each image */
     }
-    
+
     .hero-image:last-child {
-        margin-bottom: 0; /* Remove the bottom margin from the last image */
+        margin-bottom: 0;
+        /* Remove the bottom margin from the last image */
     }
-    
-    .other_image, .micro_other_image {
-        margin-bottom: 0; /* Remove bottom margin */
-        margin-top: 0; /* Remove top margin */
+
+    .other_image,
+    .micro_other_image {
+        margin-bottom: 0;
+        /* Remove bottom margin */
+        margin-top: 0;
+        /* Remove top margin */
         flex: 1 1 auto;
         max-width: 135px;
         height: 135px;
@@ -5880,7 +5901,8 @@ body.minimal {
 }
 
 .additional_description a:hover {
-    text-decoration: underline; /* Adds the underline when hovered */
+    text-decoration: underline;
+    /* Adds the underline when hovered */
 }
 
 .additional_description a:visited {
@@ -5893,10 +5915,12 @@ body.minimal {
         justify-content: center;
         align-items: center;
     }
-    
+
     .hero-image {
-        height: 155px; /* Adjust this value as needed */
-        width: auto; /* This will maintain the aspect ratio of the image */
+        height: 155px;
+        /* Adjust this value as needed */
+        width: auto;
+        /* This will maintain the aspect ratio of the image */
         margin-right: 10px;
         margin-top: 110px;
     }
@@ -6127,7 +6151,7 @@ textarea {
 }
 
 .black-image-project-hover img {
-   /* -webkit-filter: contrast(200%) grayscale(100%);
+    /* -webkit-filter: contrast(200%) grayscale(100%);
     filter: contrast(200%) grayscale(100%);
     -webkit-transition: all .1s linear;
     -o-transition: all .1s linear;
@@ -6362,6 +6386,23 @@ textarea {
     float: left;
     margin-right: 5px
 }
+
+.img_left {
+    text-align: left;
+    /* Align text and image content to the left */
+    margin-left: 350px;
+    /* Add some space between the image and the left edge */
+}
+
+.img_right {
+    text-align: right;
+    /* Keep content aligned to the left */
+    margin-left: auto;
+    /* Move the image to the right */
+    margin-right: 350px;
+    /* Add space between the image and the right edge */
+}
+
 
 /*make changes relating to getting the image on the homepage and changing the image
 on the team page*/
