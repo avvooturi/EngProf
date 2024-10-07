@@ -19,6 +19,7 @@
   <title>AIMS Site</title>
 
   <!-- Light and Dark Theme Styles -->
+  <!-- Light and Dark Theme Styles -->
   <style>
     body.light-mode {
       padding: 10px;
@@ -26,8 +27,11 @@
       background-color: beige;
     }
 
-    /* Use a descendant selector to target h2 elements inside the body.light-mode */
-    body.light-mode h2 {
+    body.light-mode h1,
+    body.light-mode h2,
+    body.light-mode h3,
+    body.light-mode p,
+    body.light-mode a {
       color: black;
     }
 
@@ -37,20 +41,19 @@
       background-color: black;
     }
 
-    body.dark-mode h2 {
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode p,
+    body.dark-mode a {
       color: white;
-      /* Ensure text is white in dark mode */
     }
   </style>
+
+
   <link href="./main.3f6952e4.css" rel="stylesheet">
 </head>
 
 <body class="">
-  <div id="site-border-left"></div>
-  <div id="site-border-right"></div>
-  <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
-  <!-- Add your content of header -->
   <header>
     <nav class="navbar  navbar-fixed-top navbar-default">
       <div class="container">
@@ -82,7 +85,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="section-container-spacer text-center">
-            <h1 class="h2">03 : The Team</h1>
+            <h1 class="h2">02 : The Team</h1>
           </div>
 
           <div class="row">
@@ -151,30 +154,7 @@
               </div>
               <div class="row">
                 <div class="col-xs-12 col-md-6">
-                  <h3>Micheal Games</h3>
-                  <h3>Graduate Research Assistant</h3>
-                  <p>Education : BSc – Electrical Engineering from University of
-                    New Mexico
-                  </p>
-                  <p>
-                    Internships/Awards: MIT LL, Peraton, GEM Fellowship
-                  </p>
-                  <p>
-                    Hobbies: Running marathons
-                  </p>
-                  <div class="leaderLinks">
-                    <a href="https://www.linkedin.com/in/michael-gamez-091b29218/">
-                      <img src="assets/images/In-Blue-14@2x.png" alt="LinkedIn" />
-                    </a>
-                  </div>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                  <img src="./assets/images/gamez.jpg" class="new-img" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-12 col-md-6">
-                  <h3>Sanjida Ritu</h3>
+                  <h3>Sanjida Sultana</h3>
                   <h3>Graduate Research Assistant</h3>
                   <p>Education: BSc - Electrical and Electronic Engineering from
                     Shahjala University of Science and Technology, Bangladesh.
@@ -261,10 +241,34 @@
                   <img src="./assets/images/evans.jpg" class="new-img" alt="">
                 </div>
               </div>
+              <h2>Alumni</h2>
+              <div class="row">
+                <div class="col-xs-12 col-md-6">
+                  <h3>Micheal Games</h3>
+                  <h3>Graduate Research Assistant</h3>
+                  <p>Education : BSc – Electrical Engineering from University of
+                    New Mexico
+                  </p>
+                  <p>
+                    Internships/Awards: MIT LL, Peraton, GEM Fellowship
+                  </p>
+                  <p>
+                    Hobbies: Running marathons
+                  </p>
+                  <div class="leaderLinks">
+                    <a href="https://www.linkedin.com/in/michael-gamez-091b29218/">
+                      <img src="assets/images/In-Blue-14@2x.png" alt="LinkedIn" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                  <img src="./assets/images/gamez.jpg" class="new-img" alt="">
+                </div>
+              </div>
             </div>
           </div>
           <div class="image-container">
-            <img class="team-image" src="./assets/images/team.jpg">
+            <img class="team-image" src="./assets/images/new_team.jpg">
           </div>
 
 
@@ -286,11 +290,6 @@
     </div>
   </footer>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      navActivePage();
-    });
-  </script>
 
   <!-- Script to Handle Dark/Light Mode Toggle -->
   <script>
@@ -298,7 +297,7 @@
       // Get references to the body and toggle button
       const body = document.body;
       const themeToggleBtn = document.getElementById('theme-toggle');
-      const navbar = document.querySelector('.navbar-inverse');
+      const navbar = document.querySelector('.navbar-default'); // Correct selector
 
       // Check for saved user preference in localStorage
       const savedTheme = localStorage.getItem('theme') || 'light';
@@ -329,6 +328,7 @@
         setTheme(currentTheme === 'dark' ? 'light' : 'dark');
       });
     });
+
   </script>
   <script type="text/javascript" src="./main.70a66962.js"></script>
 </body>
