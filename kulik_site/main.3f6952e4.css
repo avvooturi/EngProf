@@ -5833,15 +5833,6 @@ body.minimal {
     margin-right: 0;
 }
 
-.other_image,
-.micro_other_image {
-    height: 175px;
-    margin-bottom: 0;
-    /* Remove bottom margin */
-    margin-top: 0;
-    /* Remove top margin */
-}
-
 .team-image {
     height: 400px;
     margin-left: 25px;
@@ -6386,22 +6377,6 @@ textarea {
     margin-right: 5px
 }
 
-.img_left {
-    text-align: left;
-    /* Align text and image content to the left */
-    margin-left: 350px;
-    /* Add some space between the image and the left edge */
-}
-
-.img_right {
-    text-align: right;
-    /* Keep content aligned to the left */
-    margin-left: auto;
-    /* Move the image to the right */
-    margin-right: 350px;
-    /* Add space between the image and the right edge */
-}
-
 .blog-image {
     width: auto;
 }
@@ -6412,6 +6387,24 @@ textarea {
     /* Limit the image size */
     height: auto;
     /* Maintain the aspect ratio */
+}
+
+.collection {
+    display: flex;
+    flex-direction: column; /* Stacks items on top of each other */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text inside each item */
+    margin-top: 20px; /* Optional: Adds some space above the collection */
+}
+
+.img_left {
+    margin: 20px 0; /* Adds vertical space between individual items */
+}
+
+.other_image,
+.micro_other_image {
+    height: 350px; /* Set height for images */
+    margin-bottom: 10px; /* Adds some space between image and text */
 }
 
 
