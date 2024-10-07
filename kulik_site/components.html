@@ -30,6 +30,10 @@
       color: black;
     }
 
+    body.light-mode h1 {
+      color: black;
+    }
+
     body.dark-mode {
       padding: 10px;
       min-height: 100vh;
@@ -45,10 +49,6 @@
 </head>
 
 <body class="">
-  <div id="site-border-left"></div>
-  <div id="site-border-right"></div>
-  <div id="site-border-top"></div>
-  <div id="site-border-bottom"></div>
   <!-- Add your content of header -->
   <header>
     <nav class="navbar  navbar-fixed-top navbar-default">
@@ -188,22 +188,15 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
-        navActivePage();
-      });
-    </script>
-
-    <!-- Script to Handle Dark/Light Mode Toggle -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
         // Get references to the body and toggle button
         const body = document.body;
         const themeToggleBtn = document.getElementById('theme-toggle');
-        const navbar = document.querySelector('.navbar-inverse');
-
+        const navbar = document.querySelector('.navbar-default'); // Corrected selector
+    
         // Check for saved user preference in localStorage
         const savedTheme = localStorage.getItem('theme') || 'light';
         setTheme(savedTheme);
-
+    
         // Set theme based on user preference
         function setTheme(theme) {
           if (theme === 'dark') {
@@ -222,7 +215,7 @@
             themeToggleBtn.textContent = 'Switch to Dark Mode';
           }
         }
-
+    
         // Add event listener to toggle button
         themeToggleBtn.addEventListener('click', () => {
           const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
@@ -230,6 +223,7 @@
         });
       });
     </script>
+    
     <script type="text/javascript" src="./main.70a66962.js"></script>
 </body>
 

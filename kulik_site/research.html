@@ -12,29 +12,43 @@
     <title>AIMS Blog</title>
 
     <link href="./main.3f6952e4.css" rel="stylesheet">
-      <!-- Light and Dark Theme Styles -->
-  <style>
-    body.light-mode {
-      padding: 10px;
-      min-height: 100vh;
-      background-color: beige;
-    }
+    <!-- Light and Dark Theme Styles -->
+    <style>
+        body.light-mode {
+            padding: 10px;
+            min-height: 100vh;
+            background-color: beige;
+        }
 
-    /* Use a descendant selector to target h2 elements inside the body.light-mode */
-    body.light-mode h2 {
-      color: black;
-    }
+        /* Use a descendant selector to target h2 elements inside the body.light-mode */
+        body.light-mode h2 {
+            color: black;
+        }
 
-    body.dark-mode {
-      padding: 10px;
-      min-height: 100vh;
-      background-color: black;
-    }
+        /* New CSS rule to set <p> text color in light mode */
+        body.light-mode p {
+            color: black;
+            /* Set text color to black in light mode */
+        }
 
-    body.dark-mode h2 {
-      color: white; /* Ensure text is white in dark mode */
-    }
-  </style>
+        body.dark-mode {
+            padding: 10px;
+            min-height: 100vh;
+            background-color: black;
+        }
+
+        body.dark-mode h2 {
+            color: white;
+            /* Ensure text is white in dark mode */
+        }
+
+        /* Optional: Dark mode styling for <p> text */
+        body.dark-mode p {
+            color: white;
+            /* Set <p> text color to white in dark mode */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -94,78 +108,42 @@
                 <div class="blog-post" data-category="Supply Chain Security">
                     <div class="blog-content-wrapper">
                         <div class="blog-text">
-                            <h2 class="blog-title"><a href="blogpost1.html">Secure eFPGA based Hardware Redaction and
-                                    Acceleration</a></h2>
+                            <h2 class="blog-title">Magnetic Materials</h2>
                             <p class="blog-meta">Posted on: <span class="blog-date">August 10, 2024</span></p>
                             <p class="blog-meta">Category: Supply Chain Security | Year: 2024</p>
-                            <p class="blog-content">Protecting Hardware Supply Chain against Insider Threats</p>
+                            <p class="blog-content">Thin Film Deposit, Permanent Magnets</p>
                         </div>
                         <div class="blog-image">
-                            <img src="assets/images/ion_beam.png" alt="Blog Post Image" />
+                            <img src="assets/images/mag_materials.jpg" alt="Blog Post Image" />
                         </div>
                     </div>
                 </div>
-
                 <div class="blog-post" data-category="Supply Chain Security">
                     <div class="blog-content-wrapper">
                         <div class="blog-text">
-                            <h2 class="blog-title"><a href="blogpost1.html">Threat Modeling</a></h2>
+                            <h2 class="blog-title">Power</h2>
                             <p class="blog-meta">Posted on: <span class="blog-date">July 15, 2024</span></p>
                             <p class="blog-meta">Category: Supply Chain Security | Year: 2024</p>
-                            <p class="blog-content">Property Driven Threat Modeling Database</p>
+                            <p class="blog-content">Utilizing Motors and Inductors</p>
                         </div>
                         <div class="blog-image">
-                            <img src="assets/images/ion_beam.png" alt="Blog Post Image" />
+                            <img src="assets/images/power.png" alt="Blog Post Image" />
                         </div>
                     </div>
                 </div>
-
-                <div class="blog-post" data-category="AI-Assured Chip Design">
+                <div class="blog-post" data-category="Supply Chain Security">
                     <div class="blog-content-wrapper">
                         <div class="blog-text">
-                            <h2 class="blog-title"><a href="blogpost1.html">Secure and Reliable AI in Chip Design</a>
-                            </h2>
+                            <h2 class="blog-title">Communication Devices & Sensors</h2>
                             <p class="blog-meta">Posted on: <span class="blog-date">July 15, 2024</span></p>
-                            <p class="blog-meta">Category: AI-Assured Chip Design | Year: 2024</p>
-                            <p class="blog-content">Security and Optimization for cloud-EDA Platform</p>
+                            <p class="blog-meta">Category: Supply Chain Security | Year: 2024</p>
+                            <p class="blog-content">RF (VLF to mmWave) & Optics (Infrared)</p>
                         </div>
                         <div class="blog-image">
-                            <img src="assets/images/ion_beam.png" alt="Blog Post Image" />
+                            <img src="assets/images/com_device.jpg" alt="Blog Post Image" />
                         </div>
                     </div>
                 </div>
-
-                <div class="blog-post" data-category="Cryptography">
-                    <div class="blog-content-wrapper">
-                        <div class="blog-text">
-                            <h2 class="blog-title"><a href="blogpost1.html">Hardware Acceleration for Fully Homomorphic
-                                    Encryption</a></h2>
-                            <p class="blog-meta">Posted on: <span class="blog-date">July 15, 2024</span></p>
-                            <p class="blog-meta">Category: Cryptography | Year: 2024</p>
-                            <p class="blog-content">Hardware Acceleration of Fully Homomorphic Encryption using Synopsys
-                                ASIP Designer</p>
-                        </div>
-                        <div class="blog-image">
-                            <img src="assets/images/ion_beam.png" alt="Blog Post Image" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="blog-post" data-category="Secure Heterogeneous Integration">
-                    <div class="blog-content-wrapper">
-                        <div class="blog-text">
-                            <h2 class="blog-title"><a href="blogpost1.html">Chiplet Authentication</a></h2>
-                            <p class="blog-meta">Posted on: <span class="blog-date">July 15, 2024</span></p>
-                            <p class="blog-meta">Category: Secure Heterogeneous Integration | Year: 2024</p>
-                            <p class="blog-content">Establishing Security for Heterogenous Integration</p>
-                        </div>
-                        <div class="blog-image">
-                            <img src="assets/images/ion_beam.png" alt="Blog Post Image" />
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Add more blog posts as needed -->
             </div>
         </div>
     </div>

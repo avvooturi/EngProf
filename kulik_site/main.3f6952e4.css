@@ -6402,6 +6402,18 @@ textarea {
     /* Add space between the image and the right edge */
 }
 
+.blog-image {
+    width: auto;
+}
+
+.blog-image img {
+    width: 100%;
+    max-width: 250px;
+    /* Limit the image size */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
 
 /*make changes relating to getting the image on the homepage and changing the image
 on the team page*/
