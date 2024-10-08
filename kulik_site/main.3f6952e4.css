@@ -6391,20 +6391,45 @@ textarea {
 
 .collection {
     display: flex;
-    flex-direction: column; /* Stacks items on top of each other */
-    align-items: center; /* Centers items horizontally */
-    text-align: center; /* Centers text inside each item */
-    margin-top: 20px; /* Optional: Adds some space above the collection */
+    flex-direction: column;
+    /* Stacks items on top of each other */
+    align-items: center;
+    /* Centers items horizontally */
+    text-align: center;
+    /* Centers text inside each item */
+    margin-top: 20px;
+    /* Optional: Adds some space above the collection */
 }
 
 .img_left {
-    margin: 20px 0; /* Adds vertical space between individual items */
+    margin: 20px 0;
+    /* Adds vertical space between individual items */
 }
 
 .other_image,
 .micro_other_image {
-    height: 350px; /* Set height for images */
-    margin-bottom: 10px; /* Adds some space between image and text */
+    height: 350px;
+    /* Set height for images */
+    margin-bottom: 10px;
+    /* Adds some space between image and text */
+}
+
+@media (max-width:767px) {
+
+    .other_image,
+    .micro_other_image {
+        height: 200px;
+        /* Set height for images */
+        margin-bottom: 10px;
+        /* Adds some space between image and text */
+    }
+
+    .team-image {
+        height: 200px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 }
 
 
