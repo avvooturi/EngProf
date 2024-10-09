@@ -182,6 +182,10 @@
                 title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/"
                 title="Beautiful Free Images">Unsplash</a> Created By: Arjun Vooturi & Matthew Itskovich</p>
           </div>
+          <div class="col-xs-12">
+            <p>Contact the Lab:</p>
+            <p>407-823-1443 | Piotr.kulik@ucf.edu | Research 1, Office 356 Orlando, FL 32816</p>
+          </div>
         </div>
       </div>
     </footer>
@@ -192,11 +196,11 @@
         const body = document.body;
         const themeToggleBtn = document.getElementById('theme-toggle');
         const navbar = document.querySelector('.navbar-default'); // Corrected selector
-    
+
         // Check for saved user preference in localStorage
         const savedTheme = localStorage.getItem('theme') || 'light';
         setTheme(savedTheme);
-    
+
         // Set theme based on user preference
         function setTheme(theme) {
           if (theme === 'dark') {
@@ -215,7 +219,7 @@
             themeToggleBtn.textContent = 'Switch to Dark Mode';
           }
         }
-    
+
         // Add event listener to toggle button
         themeToggleBtn.addEventListener('click', () => {
           const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
@@ -223,7 +227,7 @@
         });
       });
     </script>
-    
+
     <script type="text/javascript" src="./main.70a66962.js"></script>
 </body>
 
