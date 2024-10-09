@@ -20,15 +20,12 @@
             background-color: beige;
         }
 
-        /* Use a descendant selector to target h2 elements inside the body.light-mode */
         body.light-mode h2 {
             color: black;
         }
 
-        /* New CSS rule to set <p> text color in light mode */
         body.light-mode p {
             color: black;
-            /* Set text color to black in light mode */
         }
 
         body.dark-mode {
@@ -39,13 +36,21 @@
 
         body.dark-mode h2 {
             color: white;
-            /* Ensure text is white in dark mode */
         }
 
-        /* Optional: Dark mode styling for <p> text */
         body.dark-mode p {
             color: white;
-            /* Set <p> text color to white in dark mode */
+        }
+
+        /* Centering the heading and spacing */
+        .centered-container {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .blog-post {
+            margin: 20px 0;
         }
     </style>
 
@@ -69,7 +74,7 @@
                         <li><a href="./about.html" title="">02 : Team</a></li>
                         <li><a href="./research.html" title="">03 : Research</a></li>
                         <li><a href="./components.html" title="">04 : Teachings</a></li>
-                        <li><a href="./works.html" title="">05 : Capapbilities (Facilities & Equipment)</a></li>
+                        <li><a href="./works.html" title="">05 : Capabilities (Facilities & Equipment)</a></li>
                     </ul>
                     <!-- Dark/Light Mode Toggle Button -->
                     <button id="theme-toggle" class="btn btn-default navbar-btn pull-right">Toggle Dark Mode</button>
@@ -78,16 +83,14 @@
         </nav>
     </header>
 
-
     <div class="container">
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
-                <div class="text-center">
-                    <h2 class="h2">Research</h2>
-                </div>
+        <div class="new-row centered-container">
+            <!-- Add the h2 heading above the blog posts -->
+            <div class="research-title">
+                <h2>Research</h2>
             </div>
-            <!-- Blog Posts -->
-            <div class="col-sm-8">
+
+            <div>
                 <div class="blog-post" data-category="Supply Chain Security">
                     <div class="blog-content-wrapper">
                         <div class="blog-text">
@@ -119,19 +122,17 @@
     <footer class="footer-container text-center">
         <!-- Footer content here -->
     </footer>
+
     <!-- Script to Handle Dark/Light Mode Toggle -->
     <script>
         document.addEventListener("DOMContentLoaded", function (event) {
-            // Get references to the body and toggle button
             const body = document.body;
             const themeToggleBtn = document.getElementById('theme-toggle');
             const navbar = document.querySelector('.navbar-inverse');
 
-            // Check for saved user preference in localStorage
             const savedTheme = localStorage.getItem('theme') || 'light';
             setTheme(savedTheme);
 
-            // Set theme based on user preference
             function setTheme(theme) {
                 if (theme === 'dark') {
                     body.classList.remove('light-mode');
@@ -150,7 +151,6 @@
                 }
             }
 
-            // Add event listener to toggle button
             themeToggleBtn.addEventListener('click', () => {
                 const currentTheme = body.classList.contains('dark-mode') ? 'dark' : 'light';
                 setTheme(currentTheme === 'dark' ? 'light' : 'dark');
