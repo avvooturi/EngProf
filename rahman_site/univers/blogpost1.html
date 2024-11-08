@@ -28,15 +28,22 @@
 
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav ">
-                        <li><a href="./index.html" title="">01 : Home</a></li>
-                        <li><a href="./works.html" title="">02 : Facilities & Equipment</a></li>
-                        <li><a href="./about.html" title="">03 : Team</a></li>
-                        <li><a href="./contact.html" title="">04 : Contact</a></li>
-                        <li><a href="./components.html" title="">05 : Teaching & Publications</a></li>
-                        <li><a href="./blog.html" title="">06 : Blog</a></li>
-                        <li><a href="./research.html" title="">07 : Research</a></li>
-                      </ul>
-                </div>
+                      <li><a href="./index.html" title="">01 : Home</a></li>
+                      <!-- news is #2 -->
+                      <!-- research is #3 -->
+                      <!-- team is #4 -->
+                      <!-- facilities (commented out) replace with publications (same format as research with tabs, with the tabs also being the same) is #5 -->
+                      <!-- teaching is #6 -->
+                      <!-- contact goes in footer -->
+                      <li><a href="./blog.html" title="">02 : Publications</a></li>
+                      <li><a href="./research.html" title="">03 : Research</a></li>
+                      <li><a href="./about.html" title="">04 : Team</a></li>
+                      <li><a href="./works.html" title="">05 : Facilities</a></li>
+                      <li><a href="./components.html" title="">06 : Teachings</a></li>
+                    </ul>
+                    <button id="theme-toggle" class="btn btn-default navbar-btn pull-right">Toggle Dark Mode</button>
+          
+                  </div>
             </div>
         </nav>
     </header>
@@ -44,29 +51,38 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
-                <h2 class="blog-title">Title of the Blog Post</h2>
-                <p class="blog-meta">Posted on: <span class="blog-date">August 10, 2024</span></p>
+                <h2 class="blog-title">Project 1 - AI-Assured IC Design</h2>
+                <p class="blog-meta">Posted on: <span class="blog-date">November 5, 2024</span></p>
                 <p class="blog-meta">Category: <span class="blog-category">Tech</span> | Year: <span
                         class="blog-year">2024</span></p>
 
                 <div class="blog-content">
-                    <p>The effectiveness of a physical obfuscation method depends on how effectively it can go through
-                        all the different steps of integrated circuit design and development from RTL to GDSII and
-                        fabrication. With that in mind, as shown in the figure, we implemented the “LLE - Last Level
-                        Edit” in a set of benchmark circuits consisting of ring-oscillators, linear feedback shift
-                        registers (LFSR), and S38417 from ISCAS’89 benchmark circuits. To design, implement, verify, and
-                        fabricate the LLE integrated benchmark, we utilized Cadence Genus, Cadence Innovus, Calibre
-                        DesignRev, Cadence Virtuoso, and Cadence Tempus electronic design automation (EDA) tools with
-                        90nm MITLL Low-Power FDSOI CMOS Process.</p>
+                    <p>Problem Statement</p>
+                    <ul>
+                        <p>Integrated Circuit (IC) Design, and Implementation is time consuming</p>
+                        <p> - Most of the steps require heavy optimization involving np-hard problems</p>
+                        <p>CHIPS and Science Act reshores IC design and manufacturing to US</p>
+                        <p> - > 50,000 semiconductor engineers will be required within next 5 years</p>
+                        <p>Chip placement impacts the subsequent steps/quality of the chip</p>
+                        <p>Takes weeks/months for skilled engineers  DARPA IDEA program</p>
+                    </ul>
 
                     <!-- Image container to hold both images -->
                     <div class="blog-image-container">
-                        <img src="assets/images/ion_beam.png" alt="Blog Post Image 1" class="blog-image" />
-                        <img src="assets/images/plasma-therm.jpg" alt="Blog Post Image 2" class="blog-image" />
+                        <img src="assets/images/blogpost1_pic1.png" alt="Blog Post Image 1" class="blog-image" />
+                        <img src="assets/images/blogpost1_pic2.png" alt="Blog Post Image 2" class="blog-image" />
+                        <img src="assets/images/blogpost1_pic3.png" alt="Blog Post Image 3" class="blog-image" />
+                    </div>
+                    <div class="blog-image-container">
+                        <img src="assets/images/blogpost1_pic4.png" alt="Blog Post Image 4" class="blog-image" />
                     </div>
 
-                    <p>Continue writing your blog content here...</p>
-                    <p>More content...</p>
+                    <p>Solution</p>
+                    <ul>
+                        <p>PlacePro, No-human-in-the-loop IC design by reinforcement learning (RL)</p>
+                        <p>Cuts down placement time from weeks/months -> hours/days</p>
+                        <p>Utilizes human-inspired topological and testability features during placement</p>
+                    </ul>
                 </div>
 
             </div>

@@ -999,7 +999,14 @@ pre code {
     margin-left: -15px;
     margin-right: -15px;
     padding-bottom: 25px;
-    margin-top: 75px
+    margin-top: 120px
+}
+
+.new-row {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 25px;
+    margin-top: 20px
 }
 
 .row:after,
@@ -5673,21 +5680,6 @@ button.close {
     z-index: 1
 }
 
-#site-border-left,
-#site-border-right {
-    top: 0;
-    bottom: 0;
-    width: 10px
-}
-
-#site-border-left {
-    left: 0
-}
-
-#site-border-right {
-    right: 0
-}
-
 #site-border-bottom,
 #site-border-top {
     left: 0;
@@ -5836,7 +5828,8 @@ body.minimal {
 
 .other_image,
 .micro_other_image {
-    height: 175px;
+    height: 30vw;
+    width:auto;
     margin-bottom: 0;
     /* Remove bottom margin */
     margin-top: 0;
@@ -6004,7 +5997,6 @@ h2:before {
     content: "";
     position: absolute;
     height: 100%;
-    background-color: #000;
     width: 1px
 }
 
@@ -6447,7 +6439,7 @@ textarea {
 }
 
 .blog-image img {
-    max-width: 200px;
+    max-width: 170px;
     /* Adjust width as needed */
     height: auto;
     border-radius: 8px;
@@ -6504,6 +6496,17 @@ textarea {
     padding: 10px;
 }
 
+.second-blog-image {
+        max-width: 750px;
+        /* Set the max-width for each image */
+        height: 240px;
+        border-radius: 20px;
+        /* Optional: rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Optional: slight shadow */
+        padding: 10px;
+}
+
 
 .section-container-spacer h2.blog-title {
     font-size: 28px;
@@ -6531,8 +6534,6 @@ textarea {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* Center text inside the element */
-    height: 15vh;
     /* Optional: Adjust this to center vertically within a defined space */
     margin: 0 auto;
     /* Optional: To center the element itself */
@@ -6578,7 +6579,7 @@ h3 {
     }
 
     .sum-desc {
-        font-size: 11px;
+        font-size: 3px;
     }
 
     .book_image,
@@ -6590,3 +6591,31 @@ h3 {
         /* Remove top margin */
     }
 }
+
+.profile-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 75px;
+}
+
+/* Group the descriptions in a container for column layout */
+.description-container {
+    display: flex;
+    max-width:40vw;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.image-container {
+    flex-shrink: 0;
+}
+
+.sum-desc {
+    font-size: 16px;
+    margin: 10px 0; /* Add spacing between stacked texts */
+}
+

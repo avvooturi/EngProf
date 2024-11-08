@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- Page 3 -->
+
 <head>
   <meta charset="UTF-8">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -11,53 +12,103 @@
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
-  
+
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>AIMS Site</title> 
+  <style>
+    body.light-mode {
+      padding: 10px;
+      min-height: 100vh;
+      background-color: beige;
+    }
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+    body.light-mode h1,
+    body.light-mode h2,
+    body.light-mode h3,
+    body.light-mode p,
+    body.light-mode a {
+      color: black;
+    }
+
+    /* Light mode style for section-container */
+    body.light-mode .section-container {
+      background-color: beige;
+      color: black;
+    }
+
+    body.dark-mode {
+      padding: 10px;
+      min-height: 100vh;
+      background-color: black;
+    }
+
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode p,
+    body.dark-mode a {
+      color: white;
+    }
+
+    /* Dark mode style for section-container */
+    body.dark-mode .section-container {
+      background-color: black;
+      color: beige;
+    }
+  </style>
+
+  <title>AIMS Site</title>
+
+  <link href="./main.3f6952e4.css" rel="stylesheet">
+</head>
 
 <body class="">
-<div id="site-border-left"></div>
-<div id="site-border-right"></div>
-<div id="site-border-top"></div>
-<div id="site-border-bottom"></div>
- <!-- Add your content of header -->
-<header>
-  <nav class="navbar  navbar-fixed-top navbar-default">
-    <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <!-- Add your content of header -->
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav ">
-          <li><a href="./index.html" title="">01 : Home</a></li>
-          <li><a href="./blog.html" title="">02 : News</a></li>
-          <li><a href="./research.html" title="">03 : Research</a></li>
-          <li><a href="./about.html" title="">04 : Team</a></li>
-          <li><a href="./works.html" title="">05 : Facilities</a></li>
-          <li><a href="./components.html" title="">06 : Teachings</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="./index.html" title="">01 : Home</a></li>
+            <!-- news is #2 -->
+            <!-- research is #3 -->
+            <!-- team is #4 -->
+            <!-- facilities (commented out) replace with publications (same format as research with tabs, with the tabs also being the same) is #5 -->
+            <!-- teaching is #6 -->
+            <!-- contact goes in footer -->
+            <li><a href="./blog.html" title="">02 : Publications</a></li>
+            <li><a href="./research.html" title="">03 : Research</a></li>
+            <li><a href="./about.html" title="">04 : Team</a></li>
+            <li><a href="./works.html" title="">05 : Facilities</a></li>
+            <li><a href="./components.html" title="">06 : Teachings</a></li>
+          </ul>
+          <button id="theme-toggle" class="btn btn-default navbar-btn pull-right">Toggle Dark Mode</button>
 
-      </div> 
-    </div>
-  </nav>
-</header>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-<div class="section-container">
+  <div class="section-container">
     <div class="container">
-      <div class="row">
+      <div class="new-row">
         <div class="col-xs-12">
           <div class="section-container-spacer text-center">
-            <h1 class="h2">03 : The Team</h1>
+            <h1 class="h2">The Team</h1>
           </div>
-          
+
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
               <div class="row">
@@ -66,11 +117,12 @@
                   <h3>Assistant Professor @ECE, UCF</h3>
                   <p>Education:
                     Ph.D. and M.Sc. Department of Electrical and Computer Engineering, University of Florida
-                    B.Sc. degree in Electrical and Electronic Engineering from the Bangladesh University of Engineering and Technology
+                    B.Sc. degree in Electrical and Electronic Engineering from the Bangladesh University of Engineering
+                    and Technology
                   </p>
                   <p>
-                  Contact: Email: mohammad.rahman@ucf.edu
-                  Phone: 407-823-1425
+                    Contact: Email: mohammad.rahman@ucf.edu
+                    Phone: 407-823-1425
                   </p>
                   <div class="leaderLinks">
                     <a href="https://www.linkedin.com/in/piotrkulik/">
@@ -90,7 +142,7 @@
                     BS - Electrical and Electronic Engineering at Bangladesh University of Engineering and Technology
                   </p>
                   <p>
-                  Hobbies: traveling, foodie, volunttering, and social advocating.
+                    Hobbies: traveling, foodie, volunttering, and social advocating.
                   </p>
                   <div class="leaderLinks">
                     <a href="https://www.linkedin.com/in/daniel-hedlund-b50428158/">
@@ -161,34 +213,61 @@
               </div>
             </div>
           </div>
-          <div class="image-container">
-            <img class="team-image" src="./assets/images/team.jpg">
-          </div>
-          
-          
-       </div>
+
+
+        </div>
       </div>
     </div>
   </div>
 
 
-<footer class="footer-container text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <p>© UNIVERSITY OF CENTRAL FLORIDA |  <a href="http://www.mashup-template.com/" title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a> Created By: Arjun Vooturi & Matthew Itskovich</p>
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© UNIVERSITY OF CENTRAL FLORIDA | <a href="http://www.mashup-template.com/"
+              title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/"
+              title="Beautiful Free Images">Unsplash</a> Created By: Arjun Vooturi & Matthew Itskovich</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function (event) {
-     navActivePage();
-  });
-</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+  <!-- Script to Handle Dark/Light Mode Toggle -->
+  <!-- Script to Handle Dark/Light Mode Toggle -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const body = document.body;
+      const themeToggleBtn = document.getElementById('theme-toggle');
+      const savedTheme = localStorage.getItem('theme') || 'light';
+
+      // Apply the saved theme when the page loads
+      applyTheme(savedTheme);
+
+      // Function to apply the theme
+      function applyTheme(theme) {
+        body.classList.toggle('dark-mode', theme === 'dark');
+        body.classList.toggle('light-mode', theme === 'light');
+        localStorage.setItem('theme', theme);
+        themeToggleBtn.textContent = theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+      }
+
+      // Toggle between dark and light mode on button click
+      themeToggleBtn.addEventListener('click', () => {
+        const newTheme = body.classList.contains('dark-mode') ? 'light' : 'dark';
+        applyTheme(newTheme);
+      });
+    });
+  </script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
 
 <script>
   (function (i, s, o, g, r, a, m) {
@@ -201,6 +280,8 @@
   ga('send', 'pageview');
 </script>
 
---> <script type="text/javascript" src="./main.70a66962.js"></script></body>
+-->
+  <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
 
 </html>

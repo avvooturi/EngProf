@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developed by Orson.io team" name="author">
+
+    <title>AIMS Blog - Blog Post</title>
+
+    <link href="./main.3f6952e4.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav ">
+                      <li><a href="./index.html" title="">01 : Home</a></li>
+                      <!-- news is #2 -->
+                      <!-- research is #3 -->
+                      <!-- team is #4 -->
+                      <!-- facilities (commented out) replace with publications (same format as research with tabs, with the tabs also being the same) is #5 -->
+                      <!-- teaching is #6 -->
+                      <!-- contact goes in footer -->
+                      <li><a href="./blog.html" title="">02 : Publications</a></li>
+                      <li><a href="./research.html" title="">03 : Research</a></li>
+                      <li><a href="./about.html" title="">04 : Team</a></li>
+                      <li><a href="./works.html" title="">05 : Facilities</a></li>
+                      <li><a href="./components.html" title="">06 : Teachings</a></li>
+                    </ul>
+                    <button id="theme-toggle" class="btn btn-default navbar-btn pull-right">Toggle Dark Mode</button>
+          
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+                <h2 class="blog-title">Project 3 - Secure Heterogeneous Integration</h2>
+                <p class="blog-meta">Posted on: <span class="blog-date">November 5, 2024</span></p>
+                <p class="blog-meta">Category: <span class="blog-category">Tech</span> | Year: <span
+                        class="blog-year">2024</span></p>
+
+                <div class="blog-content">
+                    <p>Problem Statement</p>
+                    <ul>
+                        <p>Heterogeneous integration (HI) involves combining diverse chiplets, each sourced from potentially untrusted vendors, into a single package  realize “more than Moore” concept</p>
+                        <p>Authentication mechanisms are essential to verify the trustworthiness of these chiplets throughout their lifecycle, from manufacturing to deployment.</p>
+                        <p>The presence of an active interposer and the combination of different components may cause varied power consumption or EM characteristics, leading to multifold side-channel and tampering attacks.</p>
+                        <p>Manufacturing test requires - (i) pre-integration chiplet testing, (ii) sharing sensitive test data, and (iii) package testing.</p>
+                    </ul>
+
+                    <!-- Image container to hold both images -->
+                    <div class="blog-image-container">
+                        <img src="assets/images/blogpost3_pic1.png" alt="Blog Post Image 1" class="blog-image" />
+                    </div>
+                    <p>Solution</p>
+                    <ul>
+                        <p>Authenticate using secure multi-party computation</p>
+                        <p>Each of chiplets engage in computing the outcome of a function without sharing the secret -> verifies authenticity</p>
+                        <p>Only authenticated chiplets engage in DFT and function</p>
+                        <p>Large system-on-chips require splitting or partitioning to smaller chiplets to be fabricated in advanced technology nodes, e.g., 2nm to maintain the yield.</p>
+                        <p>We are developing secure splitting of intellectual properties without revealing the internal secrets in the interposer level using graph partition algorithm.</p>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>© UNIVERSITY OF CENTRAL FLORIDA | <a href="http://www.mashup-template.com/"
+                            title="Create website with free html template">Mashup Template</a>/<a
+                            href="https://www.unsplash.com/" title="Beautiful Free Images">Unsplash</a> Created By:
+                        Arjun Vooturi & Matthew Itskovich</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./main.70a66962.js"></script>
+</body>
+
+</html>
